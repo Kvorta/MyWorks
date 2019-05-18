@@ -1,0 +1,341 @@
+body,
+body * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    vertical-align: top;
+    word-break: break-all;
+    cursor: pointer;
+}
+
+.chess {
+    display: inline-block;
+    float: left;
+    width: 1100px;
+    height: 650px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: calc(50% - 550px);
+    border: 5px solid #CCC;
+    background-color: rgba(128, 128, 128, 0.322);
+}
+
+
+
+.chess > .skaiciai  {
+    float: left;
+    margin-right: 6px;
+}
+
+.chess > .skaiciai > div {
+    font-size:26px; 
+    font-weight: bold;
+    padding: 25px 0 19px 0;
+}
+.chess > .skaiciai > div:last-child {
+    padding: 25px 0 0 0;
+
+}
+
+
+.chess > .raides  {
+    display: inline-block;
+    float: left;
+}
+
+.chess > .raides > div {
+    display: inline-block;
+    float: left;
+    font-size:26px; 
+    font-weight: bold;
+    padding: 0 15px 0 47px;
+}
+.chess > .raides > div:last-child {
+     padding: 0 0 0 47px; 
+
+}
+
+
+.chess > .chess-board {
+    display: inline-block;
+    float: left;
+    width: 600px;
+    height: 600px;
+   
+    border: 5px solid rgb(179, 177, 177);
+    background-color: bisque;
+    text-align:center;
+}
+
+        .chess-board >  .cell {
+            display: inline-block;
+            float: left;
+            width: 12.5%;
+            height: 12.5%;
+        }
+
+        .chess-board >  .cell > .figura {
+            /* display: inline-block; */
+             width: 60px; 
+             height: 60px; 
+            margin: 8px;
+            color:black;
+            font-size:50px;
+
+
+            /* animation-name: vaziuojam;
+            animation-duration: 2s;
+            animation-delay: 0; 
+            
+             animation: animateElement linear 3s;
+             animation-iteration-count: 1;
+            */
+    
+        }
+
+
+       /*  @keyframes animateElement{
+            0% {
+              opacity:0;
+              transform:  translate(0px,10px);
+            }
+            100% {
+              opacity:1;
+              transform:  translate(0px,0px);
+            }
+          }
+ */
+
+/* 
+        .mouse > .wheel:hover {
+            animation-play-state: paused;
+        }
+        @keyframes vaziuojam {
+        from {
+            margin-top: 20%;
+            opacity: 1;
+        }
+        to {
+            margin-top: 100%;
+            opacity: 0;
+        }
+
+ */
+
+
+
+
+        
+
+        .chess-board >  .cell > .zv {
+            margin-top: 32px;
+            margin-left: 32px;
+            background-color:rgb(46, 223, 46);
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+        }
+
+        .chess-board >  .cell > .figura.kerta {
+            font-size:40px;
+            border: 5px solid rgb(46, 223, 46);
+        }
+
+        .chess-board > .cell.active {
+            background-color: rgb(148, 167, 165);
+            color:  red;
+        }
+
+        .black {
+            background-color: chocolate;
+        }
+
+/**************************************************************/
+/**************************************************************/
+/**************************************************************/
+/**************************************************************/
+
+.chess > .game_info {
+    display: inline-block;
+    float: left;
+    width: calc(100% - 650px);
+    margin-left: 20px;
+    height: 600px;
+    padding: 10px;
+    border: 5px solid #CCC;
+    background-color: rgb(252, 248, 248);
+    text-align:center;
+}
+      .game_info > .header * {
+        display: inline-block;
+        /* margin: 15px 0; */
+    }
+
+    .game_info > .header> #go_btn{
+        float: left;
+    }
+    .game_info > .header> #pause_btn{
+       visibility: hidden; 
+        float: right;
+    }
+
+
+    
+    .game_info > .laikas{
+        display: inline-block;
+        float: left;
+        width: 100%;
+        /* margin-left: 10px; */
+        margin: 10px 0;
+        padding: 10px;
+        border: 5px solid #CCC;
+        background-color: rgb(201, 189, 189);
+    }
+
+        .game_info > .laikas >.spalva {
+            display: inline-block;
+            float: left;
+            width: calc(50% - 10px);
+        }
+
+        .game_info > .laikas > .spalva > .counter {
+            display: inline-block;
+            float: left;
+            width: 100%;
+            
+            text-align: center;
+            background-color: rgb(224, 215, 215);
+            color: red;
+            line-height: 30px;
+            font-size: 24px;
+            padding: 2px 5px;
+        }
+        .game_info > .laikas > .spalva:last-child {
+            float: right;
+            margin-left: 10px;
+            
+        }
+        
+        .game_info > .laikas > .spalva:last-child > .counter:last-child {
+            
+            background-color: #000;
+        }
+
+    .game_info > .history{
+        display: inline-block;
+        float: left;
+        width: 100%;
+        height: 400px;
+        font-size: 16px;
+        margin: 10px 0;
+        padding: 10px;
+        border: 5px solid #CCC;
+        background-color: rgb(247, 243, 243);
+        overflow-y: scroll;
+
+    }
+    .game_info > .history > div{
+        display: inline-block;
+        width: 256px;
+        border: 1px solid #dddddd;
+   }
+    .game_info > .history > div > div{
+        display: inline-block;
+        width: 50px;
+        padding-top: 5px;
+        /* border: 1px solid #dddddd; */
+        }
+
+            .game_info > .history > div > div:nth-child(1) {
+                float: left;
+            }
+            .game_info > .history > div > div:nth-child(2) {
+                font-size: 20px;
+                padding-top: 0px;
+            }
+
+            .game_info > .history > .winner {
+                line-height: 30px;
+                font-weight: bold;
+                font-size: 30x;
+                padding-top: 0px;
+                color: red;
+
+            }
+
+
+/******************************************************
+ * BUTTONS
+ ******************************************************/
+ .btn {
+    /* display: inline-block; */
+    /* padding: 6px; */
+    background-color: #ff6161;
+    color: #FFF;
+    font-size: 15px;
+    line-height: 26px;
+    width: 80px;
+    text-align: center;
+    text-transform: capitalize;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    cursor: pointer;
+    text-decoration: none;
+}
+    .btn:hover {
+        box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+        margin: 4px 0 -4px 0;
+        background-color: red;
+    }
+/*     .btn:active {
+        background-color: green;
+    }
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+ .chessboard {
+   
+    
+    height: 560px;
+    position: absolute;
+    top: 10%;
+    left: calc(50% - 350px);
+
+    border: 5px; 
+    border-color:  rgb(105, 53, 53) ;
+    border-style: solid;
+
+ }
+    .white {
+        
+        font-size:50px;
+        text-align:center;
+             
+        width:70px;
+        height:70px;
+        background-color: bisque;
+     }
+    .black {
+      
+        font-size:50px;
+        text-align:center;
+        
+        width:70px;
+        height: 70px;
+        background-color: chocolate
+    }  */

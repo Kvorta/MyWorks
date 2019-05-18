@@ -1,0 +1,127 @@
+/*    body,
+    body * {
+        background-color: red;
+        color: blue;
+    }*/
+    
+    .contact-book{
+        display: inline-block;
+        float: left;
+        margin: 25px;
+        width: calc(100% - 100px);
+        height: 550px;
+        padding: 20px;
+        border: 5px solid #CCC;
+        background-color: rgba(128, 128, 128, 0.04);
+    }
+        .table-div{
+            max-height: 480px;
+            width:100%;
+            overflow-y: scroll;
+        }
+            #addr-table{
+                width:80%;  
+            }
+            #con-table{
+                width:80%;  
+            }            
+
+            table{
+                width:100%;
+                font-family: Arial, sans-serif;
+                text-align: left;
+                font-size: 14px;
+                overflow-y: scroll;
+            }
+
+            table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+                overflow: hidden;
+            }   
+                th {
+                    background-color: #cecf948c ;
+                }
+                
+                th, td {
+                    padding: 5px;
+                    max-width: 35px;
+                }
+                
+                td:nth-child(2), td:nth-child(3) {
+                    max-width: 150px;    
+                }
+                tr:nth-child(even) {
+                    background-color: #f4f4ef  ;
+                }
+
+/*///////////////////////////////////////*/
+
+    .contact-book-edit{
+        display: inline-block;
+        float: left;
+        margin: 100px;
+        width: calc(100% - 250px);
+        height: 400px;
+        padding: 10px;
+        border: 5px solid #CCC;
+        background-color: rgba(128, 128, 128, 0.322);
+        
+    }
+
+    .form-style{
+            padding: 20px ;
+            font: 14px Arial, Helvetica, sans-serif;
+    }
+    .form-style-heading{
+            display:block;
+            font-style: italic;
+            border-bottom: 1px solid #fff;
+            margin-bottom: 20px;
+            font-size: 15px;
+    }
+    .form-style label{
+            display: block;
+            margin: 0px 0px 15px 0px;
+    }
+    .form-style label > span{
+            width: 100px;
+            font-weight: bold;
+            float: left;
+            padding-top: 8px;
+            padding-right: 5px;
+    }
+    .form-style span.required{
+            color:red;
+    }
+    .form-style input.input-field {
+            width: 48%;	
+    }
+    .form-style input.input-field {
+            box-sizing: border-box;
+            border: 1px solid #C2C2C2;
+            box-shadow: 1px 1px 4px #EBEBEB;
+            border-radius: 3px;
+            padding: 7px;
+            outline: none;
+    }
+    .form-style .input-field:focus{
+            border: 1px solid #0C0;
+    }
+
+    .form-style input[type=submit]{
+            border: none;
+            padding: 8px 15px 8px 15px;
+            background: #FF8500;
+            color: #fff;
+            box-shadow: 1px 1px 4px #DADADA;
+            border-radius: 3px;
+    }
+    .form-style input[type=submit]:hover {
+            background: #EA7B00;
+            color: #fff;
+    }
+    .form-style .select-field{
+/*            width: 100%;	*/
+    }
+
